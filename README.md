@@ -68,10 +68,10 @@ Fine-tuned for land-use and scene classification.
 
 ## 🖼️ Screenshots (Add Yours Here)
 
-📌 Add screenshots inside a folder named `/screenshots`
+📌 `/screenshots`
 
 ```md
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2efab23a-16d8-42e5-8b82-a1b6ff1b0930" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f5404038-4a22-4064-9292-085e17d15a51" />
+![Dashboard] (<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2efab23a-16d8-42e5-8b82-a1b6ff1b0930" />)
+![Prediction Output] (<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f5404038-4a22-4064-9292-085e17d15a51" />)
 
 
