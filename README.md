@@ -66,7 +66,7 @@ Fine-tuned for land-use and scene classification.
 
 ---
 
-## 🖼️ Screenshots (Add Yours Here)
+## 🖼️ Screenshots 
 
 📌 `/screenshots`
 
