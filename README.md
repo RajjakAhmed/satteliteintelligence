@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# 📡 SatelliteIntelligence  
+### AI-Powered Satellite Image Land Classification System  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Made with Python](https://img.shields.io/badge/Made%20With-Python-blue)  
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-ResNet50-green)  
+![Dataset](https://img.shields.io/badge/Dataset-NWPU--RESISC45-orange)  
+![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Tailwind-purple)  
+![Status](https://img.shields.io/badge/Project-Active-success)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌍 Overview
 
-## React Compiler
+**SatelliteIntelligence** is an AI-powered satellite image classification platform that predicts land-use categories such as:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🏙️ Residential • 🌲 Forest • 🌾 Farmland • 🏜️ Desert • 🌊 Water Bodies • 🏭 Industrial
 
-## Expanding the ESLint configuration
+The project uses a **ResNet-50 deep learning model** trained on the **NWPU-RESISC45 remote sensing dataset** to provide real-time geographic insights from satellite imagery.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Key Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+✅ Upload satellite images for instant prediction  
+✅ Multi-class land-use classification using **ResNet-50 CNN**  
+✅ Confidence score output for every prediction  
+✅ Works well on urban, forest, crop, and water regions  
+✅ Stores only metadata (label + confidence) — no image storage for privacy  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏷️ Supported Land Classes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The model can classify:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🏙️ Residential Areas  
+- 🌲 Forest Regions  
+- 🌾 Permanent Crop / Farmland  
+- 🏜️ Desert Terrain  
+- 🌊 Sea / Lake / Water Bodies  
+- 🏭 Industrial Zones  
+- 🌱 Pasture / Grassland  
+
+---
+
+## 📚 Dataset & Model
+
+### 📌 Dataset Used  
+- **NWPU-RESISC45**  
+A benchmark remote sensing dataset containing 45 scene classes with high-resolution satellite imagery.
+
+### 🧠 Model Architecture  
+- **ResNet-50 (Transfer Learning)**  
+Fine-tuned for land-use and scene classification.
+
+---
+
+## 📸 Sample Predictions
+
+| Test Region | Predicted Label | Confidence |
+|------------|----------------|------------|
+| Kolkata City (Dense Urban) | Residential | **0.93** |
+| Amazon Rainforest | Forest | **0.99** |
+| Village Farmland Fields | PermanentCrop | **0.72** |
+| Ganga River Water Body | SeaLake | **0.69** |
+
+---
+
+## 🖼️ Screenshots (Add Yours Here)
+
+📌 Add screenshots inside a folder named `/screenshots`
+
+```md
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2efab23a-16d8-42e5-8b82-a1b6ff1b0930" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f5404038-4a22-4064-9292-085e17d15a51" />
+
+
