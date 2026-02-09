@@ -113,7 +113,7 @@ export default function Landing() {
               className="absolute -bottom-6 left-6 bg-black/60 backdrop-blur-xl px-5 py-3 rounded-2xl border border-white/10 shadow-lg"
             >
               <p className="text-sm text-gray-300">
-                Powered by ResNet18 + EuroSAT Dataset
+                Powered by ResNet50 + EuroSAT + NWPU-RESISC45 
               </p>
             </motion.div>
           </motion.div>
